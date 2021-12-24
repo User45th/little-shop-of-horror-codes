@@ -16,7 +16,7 @@ import Logout from "./pages/logout/Logout";
 function App() {
   //FIND a better way to check if user is admin
   //= useSelector((state) => state.user.currentUser.isAdmin) ???
-  const admin = true;
+  const admin = useSelector((state) => state.user.currentUser.isAdmin);
 
   return (
     <Router>
